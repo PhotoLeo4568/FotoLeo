@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Fotos/Favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Leo</title>
+    <link rel= "preconnect" href="https://fonts.gstatic.com">
+    <script src= "https://kit.fontawesome.com/8dca05f736.js" crossorigin="anonymous"></script>
+    <link href= "https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styleform.css">
+</head>
+<body>
+    <!--Menu-->
+   <header>
+
+    <div class="header-content">
+
+        <div class="logo">
+            <h1>Foto Leo</h1>
+        </div>
+
+        <div class="menu" id="show-menu">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> <i class="fas fa-file-alt"> </i>Inicio</a></li>
+
+                    <li><a href="servicios.html"> <i class="fab fa-youtube"> </i>Servicios</a></li>
+                    
+                    <li class="menu-selected"><a href="contacto.html" class="text-menu-selected"> 
+                        <i class="fas fa-headset"></i>Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+    <div class="container-cover">
+        <div class="container-info-cover">
+            <h1>¡Bienvenida a Contacto!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    </div>
+
+    <article>
+        <div id="container">
+            <h1>&bull; Foto Leo &bull;</h1>
+            <div class="underline">
+            </div>
+            <div class="icon_wrapper">
+            <svg class="icon" viewBox="0 0 16 16">
+                <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+            </svg>
+            </div>
+        
+    
+        <form id="formulario" class="formulario">
+            <div class="box-input">
+                <input placeholder="Escriba su Nombre" name="nombre" id="nombre" type="text" required>
+                
+            </div>
+            <div class="box-input">
+                <input placeholder="Escriba su Correo Electrónico" name="email" id="email" type="text" required>
+            </div>
+            <div class="box-input">
+                <select placeholder="Seleccione su Asunto" name="asunto" id="asunto" type="text" required>
+                    <option disabled hidden selected>Asunto</option>
+                    <option>Precios</option>
+                    <option>Direccion</option>
+                    <option>Fechas de entrega</option>
+                    <option>Servicios(Dudas)</option>
+                </select>    
+            </div>
+            <div class="box-input">
+                <textarea placeholder="Escriba su Mensaje" name="texto" id="texto" type="text" cols="30" rows="5" required></textarea>
+            </div>
+            <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+        </form>
+    
+        <script type="text/javascript">
+            $(".box-input input").on("focus", function(){
+                $(this).addClass("focus");
+            });
+    
+            $(".box-input input").on("blur", function(){
+                if($(this).val() == ""){
+                    $(this).removeClass("focus");
+                }
+            });
+    
+        </script>
+    </article>
+
+    <!--Footer - Pie de Pagina -->
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="Fotos/Favicon-modified.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2021 Foto Leo - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/form.js"></script>
+
+</body>
+</html>

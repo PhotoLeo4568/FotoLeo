@@ -1,133 +1,174 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <link  rel="icon"   href="Fotos/Favicon.png" type="image/png" />
-  <title>FOTO LEO</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
-
-<link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Fotos/Favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Leo</title>
+    <link rel= "preconnect" href="https://fonts.gstatic.com">
+    <script src= "https://kit.fontawesome.com/8dca05f736.js" crossorigin="anonymous"></script>
+    <link href= "https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+    <!--Menu-->
+   <header>
 
-  <!--container-redes-sociales-->
+    <div class="header-content">
 
-<div class="container-redes">
+        <div class="logo">
+            <h1>Foto Leo</h1>
+        </div>
 
-    <a href="https://api.whatsapp.com/send?phone=525566133585&text=¿Qué servicios ofrecen?" target="_blank">
+        <div class="menu" id="show-menu">
 
-        <img src="icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt="">
+            <nav>
+                <ul>
+                    
+                    <li><a href="index.html"> <i class="fas fa-file-alt"> </i>Inicio</a></li>
+                    
+                    <li class="menu-selected"><a href="servicios.html" class="text-menu-selected"> 
+                        <i class="fab fa-youtube"></i>Servicios</a></li>
 
-    </a>
+                    <li><a href="contacto.html"> <i class="fas fa-headset"></i> Contacto</a></li>
+                </ul>
+            </nav>
 
-</div>
+        </div>
 
-<div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu__link" data-tween-back="true" aria-hidden="true"></div>
+    </div>
+
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+    <div class="container-cover">
+        <div class="container-info-cover">
+            <h1> ¡Bienvenido a Servicios!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    </div>
+
+    <!--Parte de Seleccion-->
+
+    <div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu__link" data-tween-back="true" aria-hidden="true"></div>
 <div class="c-magic-area c-magic-area--content" data-target-class=".c-article__link" data-tween-back="false" aria-hidden="true"></div>
-
-<main id="page" class="o-page">
-  <header class="o-header">
-    <h1 class="c-logo"><a class="c-logo__link" href="https://frontend30.com" target="_blank">Foto Leo</a></h1>
-    <nav class="c-main-menu" aria-labelledby="mainmenulabel">
-      <h2 id="mainmenulabel" class="u-visually-hidden">Menu</h2>
-      <ul class="c-main-menu__list">
-        <li><a class="c-main-menu__link" href="index.html">Inicio</a></li>
-        <li><a aria-current="page" class="is-magic-active c-main-menu__link" href="servicios.html">Servicios</a></li>
-        <li><a class="c-main-menu__link" href="Contactanos.html">Contactanos</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="o-main-section">
-    <h2 class="c-main-heading">Servicios de Identificacion en fotografia</h2>
+    
+    <section class="o-main-section">
+        <h2 class="c-main-heading">Servicios de Identificacion en fotografia</h2>
 
     <article class="c-article">
       <a class="c-article__link" href="#">
         <div>
-          <header>
+          <title>
             <h3 class="c-article__heading">Foto Infantil</h3>
-          </header>
+          </title>
           <div class="c-article__content">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sed mollitia dignissimos temporibus placeat unde quasi ab.
           </div>
         </div>
         <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="Fotos/Infantil.jpg" alt="FOTO Infantil" />
+            <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
         </div>
       </a>
     </article>
-
     <article class="c-article">
-      <a class="c-article__link" href="#">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Foto Ovalo Credencial</h3>
-          </header>
-          <div class="c-article__content">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi obcaecati neque vero ipsam tenetur, adipisci labore.
+        <a class="c-article__link" href="#">
+          <div>
+            <title>
+              <h3 class="c-article__heading">Foto Ovalo Credencial</h3>
+            </title>
+            <div class="c-article__content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi obcaecati neque vero ipsam tenetur, adipisci labore.
+            </div>
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="Fotos/Infantil.jpg" alt="Ovalo Credencial" />
-        </div>
-      </a>
-    </article>
-
-    <article class="c-article">
-      <a class="c-article__link" href="#">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Foto Diploma</h3>
-          </header>
-          <div class="c-article__content">
-            Create the space rocket animation with stars in different perspective.
+          <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
-        </div>
-      </a>
-    </article>
-
-    <article class="c-article">
-      <a class="c-article__link" href="#">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Space rocket with requestAnimationFrame</h3>
-          </header>
-          <div class="c-article__content">
-            Create the space rocket animation with stars in different perspective.
+        </a>
+      </article>
+  
+      <article class="c-article">
+        <a class="c-article__link" href="#">
+          <div>
+            <article>
+              <h3 class="c-article__heading">Foto Diploma</h3>
+            </article>
+            <div class="c-article__content">
+              Create the space rocket animation with stars in different perspective.
+            </div>
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
-        </div>
-      </a>
-    </article>
-
-    <article class="c-article">
-      <a class="c-article__link" href="#">
-        <div>
-          <header>
-            <h3 class="c-article__heading">Restauracion de Fotografia</h3>
-          </header>
-          <div class="c-article__content">
-            Create the space rocket animation with stars in different perspective.
+          <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
           </div>
-        </div>
-        <div class="c-article__img-wrapper">
-          <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
-        </div>
-      </a>
-    </article>
-  </section>
-</main>
+        </a>
+      </article>
+  
+      <article class="c-article">
+        <a class="c-article__link" href="#">
+          <div>
+            <title>
+              <h3 class="c-article__heading">Space rocket with requestAnimationFrame</h3>
+            </title>
+            <div class="c-article__content">
+              Create the space rocket animation with stars in different perspective.
+            </div>
+          </div>
+          <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
+          </div>
+        </a>
+      </article>
+  
+      <article class="c-article">
+        <a class="c-article__link" href="#">
+          <div>
+            <title>
+              <h3 class="c-article__heading">Restauracion de Fotografia</h3>
+            </title>
+            <div class="c-article__content">
+              Create the space rocket animation with stars in different perspective.
+            </div>
+          </div>
+          <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="https://assets.codepen.io/204808/17.Space-Rocket-with-requestAnimationFrame.png" alt="Responsive Mondrian art with CSS grid" />
+          </div>
+        </a>
+      </article>
+    </section>
 
-<!-- partial -->
-  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+
+
+
+    <!--Footer - Pie de Pagina -->
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="Fotos/Favicon-modified.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2021 Foto Leo - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script><script  src="JS/script.js"></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script><script  src="JS/services.js"></script>
 </body>
 </html>

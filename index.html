@@ -1,60 +1,78 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <link  rel="icon"   href="Fotos/Favicon.png" type="image/png" />
-  <title>FOTO LEO</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://kit.fontawesome.com/8dca05f736.js" crossorigin="anonymous"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="CSS/style.css">
-
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Fotos/Favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Leo</title>
+    <link rel= "preconnect" href="https://fonts.gstatic.com">
+    <script src= "https://kit.fontawesome.com/8dca05f736.js" crossorigin="anonymous"></script>
+    <link href= "https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-  <!--container-redes-sociales-->
+    <!--Menu-->
+   <header>
 
-<div class="container-redes">
+    <div class="header-content">
 
-    <a href="https://api.whatsapp.com/send?phone=525566133585&text=¿Qué servicios ofrecen?" target="_blank">
+        <div class="logo">
+            <h1>Foto Leo</h1>
+        </div>
 
-        <img src="icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt="">
+        <div class="menu" id="show-menu">
 
-    </a>
+            <nav>
+                <ul>
+                    <li class="menu-selected"><a href="index.html" class="text-menu-selected"> 
+                        <i class="fas fa-file-alt"></i>Inicio</a></li>
+                    <li><a href="servicios.html"> <i class="fab fa-youtube"> </i>Servicios</a></li>
+                    
+                    <li><a href="contacto.html"> <i class="fas fa-headset"></i> Contacto</a></li>
+                </ul>
+            </nav>
 
-</div>
-    
+        </div>
+
+    </div>
+
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</header>
+
+    <!--Portada-->
+    <div class="container-all" id="move-content">
+    <div class="container-cover">
+        <div class="container-info-cover">
+            <h1> ¡Todo es Posible!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    </div>
 
 
-<!-- partial:index.partial.html -->
-<div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu__link" data-tween-back="true" aria-hidden="true"></div>
-<div class="c-magic-area c-magic-area--content" data-target-class=".c-article__link" data-tween-back="false" aria-hidden="true"></div>
+    <!--Footer - Pie de Pagina -->
 
-<main id="page" class="o-page">
-  <header class="o-header">
-    <h1 class="c-logo"><a class="c-logo__link" href="https://frontend30.com" target="_blank">Foto Leo</a></h1>
-    <nav class="c-main-menu" aria-labelledby="mainmenulabel">
-      <h2 id="mainmenulabel" class="u-visually-hidden">Menu</h2>
-      <ul class="c-main-menu__list">
-        <li><a aria-current="page" class="is-magic-active c-main-menu__link" href="index.html">Inicio</a></li>  
-        <li><a class="c-main-menu__link" href="servicios.html">Servicios</a></li>
-        <li><a class="c-main-menu__link" href="Contactanos.html">Contactanos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="Fotos/Favicon-modified.png" alt="">
+            </div>
 
-  
-  <section class="o-heading-off">
-    <h2 class="y-main-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-  </section>
-    
-</main>
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2021 Foto Leo - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
 
-</div>
-<!-- partial -->
-  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script><script  src="JS/script.js"></script>
-
+    <script src="JS/script.js"></script>
 </body>
 </html>

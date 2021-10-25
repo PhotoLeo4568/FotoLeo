@@ -121,4 +121,3 @@ VanillaTilt.init(document.querySelector(".c-fe30__inner"), {
   perspective: 1000,
   speed: 300
 });
-

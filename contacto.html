@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto Leo</title>
+    <script src="JS/bloqueo.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
     <link rel= "preconnect" href="https://fonts.gstatic.com">
     <script src= "https://kit.fontawesome.com/8dca05f736.js" crossorigin="anonymous"></script>
     <link href= "https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -27,12 +29,12 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html"> <i class="fas fa-file-alt"> </i>Inicio</a></li>
+                    <li><a href="index.html"> <i class="fas fa-home"> </i>Inicio</a></li>
 
-                    <li><a href="servicios.html"> <i class="fab fa-youtube"> </i>Servicios</a></li>
+                    <li><a href="servicios.html"> <i class="fas fa-portrait"> </i>Servicios</a></li>
                     
                     <li class="menu-selected"><a href="contacto.html" class="text-menu-selected"> 
-                        <i class="fas fa-headset"></i>Contacto</a></li>
+                        <i class="far fa-id-card"></i>Contacto</a></li>
                 </ul>
             </nav>
 
@@ -50,15 +52,15 @@
     <div class="container-all" id="move-content">
     <div class="container-cover">
         <div class="container-info-cover">
-            <h1>¡Bienvenida a Contacto!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h1>¡Bienvenido a Contacto!</h1>
+            <p>Deslice para ver mas... </p>
         </div>
     </div>
     </div>
 
     <article>
         <div id="container">
-            <h1>&bull; Foto Leo &bull;</h1>
+            <h2>&bull; Foto Leo &bull;</h2>
             <div class="underline">
             </div>
             <div class="icon_wrapper">
@@ -83,7 +85,7 @@
                     <option>Precios</option>
                     <option>Direccion</option>
                     <option>Fechas de entrega</option>
-                    <option>Servicios(Dudas)</option>
+                    <option>Servicios (Dudas)</option>
                 </select>    
             </div>
             <div class="box-input">
@@ -118,7 +120,7 @@
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
-                <img src="Fotos/Favicon-modified.png" alt="">
+                <img src="Fotos/Favicon-modified.png" oncontextmenu="return false" alt=""> <!--oncontextmenu="return false" sirve para que no roben las imagenes de la pagina-->
             </div>
 
             <div class="redes-footer">
@@ -133,6 +135,7 @@
 
     <script src="JS/script.js"></script>
     <script src="JS/form.js"></script>
+    
 
 </body>
 </html>

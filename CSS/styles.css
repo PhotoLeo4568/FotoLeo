@@ -85,7 +85,7 @@ header{
 }
 
 .menu .text-menu-selected{
-    color: rgba(224, 2, 2);
+    color: rgb(224, 2, 0);
 }
 
 .menu nav ul li a i{
@@ -559,7 +559,7 @@ footer .redes-footer .fa-instagram:hover{
         position: fixed;
         top: 80px;
         left: 0;
-        background: #fff;
+        background: #ffff;
         overflow: hidden;
         transform: translateX(-350px);
         box-shadow: 10px 0 20px -25px black;
@@ -594,7 +594,7 @@ footer .redes-footer .fa-instagram:hover{
         width: 20px;
         display: inline-block;
         margin-right: 10px;
-        color: #e00202;
+        color: #ffc56c;
     }
 
     #icon-menu{

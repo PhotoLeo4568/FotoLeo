@@ -91,7 +91,7 @@ function desactivarCrlAlt(teclaactual){
          Swal.fire({
             icon: 'error',
             title: 'Oops... lo siento',
-            text: 'La combinación CTRL+P no está disponible.'
+            text: 'La combinación CTRL+P no está disponible. Para que quieres imprimir??.'
           })
         //alert("Ctrl+N y Ctrl+U deshabilitado");
         desactivar=true;
@@ -105,6 +105,16 @@ function desactivarCrlAlt(teclaactual){
         //alert("Ctrl+N y Ctrl+U deshabilitado");
         desactivar=true;
       }       
+
+      if (teclaactual==83 ){
+        Swal.fire({
+           icon: 'error',
+           title: 'Oops... lo siento',
+           text: 'La combinación CTRL+S no está disponible.'
+         })
+       //alert("Ctrl+N y Ctrl+U deshabilitado");
+       desactivar=true;
+     }     
    }
    //Alt +
    if (altprecionado==18){
@@ -116,12 +126,27 @@ function desactivarCrlAlt(teclaactual){
         //alert("Alt+ [->] deshabilitado");
         desactivar=true;
       }     
+
+    //Mayus +
+    if (mayusprecionado==16){
+      if(teclaactual==83 || teclaactual==85){
+        swal.fire({
+          icon: 'error',
+          title: 'Oops... lo siento',
+          text: 'La combinacion no esta disponible.'
+        })
+        desactivar=true;
+      }
+    }
    }
    if (teclaactual==17)controlprecionado=teclaactual;
-   if (teclaactual==18)altprecionado=teclaactual;  
+   if (teclaactual==18)altprecionado=teclaactual;
+   if (teclaactual==16)mayusprecionado=teclaactual;  
    return desactivar;
 }
  
+
+
 document.onkeyup = function(){ 
    if (window.event && window.event.keyCode==17){
  controlprecionado = 0;
@@ -136,6 +161,7 @@ document.onkeydown = function(){
    //122->f11
    //117->f6
    //114->f3
+   //122->f12
    //alert(window.event.keyCode);
    if (window.event && 
          desactivarCrlAlt(window.event.keyCode)){
@@ -146,10 +172,14 @@ document.onkeydown = function(){
        window.event.keyCode == 116 || 
        window.event.keyCode == 114 || 
        window.event.keyCode == 123)){
-   // alert("lo siento!, no hay f5, f3, f6 ni f12 :P");
- window.event.keyCode = 505; 
+        Swal.fire({
+           icon: 'error',
+           title: 'Oops... lo siento',
+           text: 'F12 no está disponible. Intenta ser Creativo.'
+         });
+ window.event.keyCode = 123; 
    }
-   if (window.event.keyCode == 505){ 
+   if (window.event.keyCode == 123){ 
  return false; 
    } 
    if (window.event && (window.event.keyCode == 8)){

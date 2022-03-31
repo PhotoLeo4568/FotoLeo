@@ -107,6 +107,7 @@ const initMagic = ({ isResize } = { isResize: false }) => {
   });
 };
 
+
 initMagic();
 
 window.addEventListener(

@@ -1,0 +1,22 @@
+.btn {
+    margin: 16px 6px 2px 0;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 46px;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    float: left;
+    background-color: rgba(224, 2, 0.02);
+    margin-left: 725px;
+    display: flex;
+  }
+  .btn i{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  
+  

@@ -1,0 +1,45 @@
+.contenedor{
+    position: flex;
+    display: flex;
+    text-align: center;
+}
+
+.container-info{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    position: static;
+}
+
+.bubbly-button{
+    position: absolute;
+    top: 450px;
+    margin-left: -150px;    
+    display: block;
+    margin-top: -150px;
+}
+
+.container-text{
+    position: absolute;
+    margin-left: 950px;
+    top: 950px;
+    margin-right: 150px;
+}
+
+.button-chido{
+    position: relative;
+    top: 350px;
+    margin-left: 450px;    
+    display: block;
+    margin-top: -150px;
+}
+
+.container-text2{
+    position: absolute;
+    margin-left: 950px;
+    top: 815px;
+    margin-right: 150px;
+}
+
+

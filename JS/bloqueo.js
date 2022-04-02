@@ -171,7 +171,7 @@ document.onkeydown = function(){
       (window.event.keyCode == 122 || 
        window.event.keyCode == 116 || 
        window.event.keyCode == 114 || 
-       window.event.keyCode == 123)){
+       window.event.keyCode == )){
         Swal.fire({
            icon: 'error',
            title: 'Oops... lo siento',

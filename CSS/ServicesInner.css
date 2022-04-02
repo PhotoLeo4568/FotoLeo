@@ -20,11 +20,37 @@
     margin-top: -150px;
 }
 
+.container-credencial{
+    display: flex;
+    height: 350px;
+    height: 650px;
+}
+
 .container-infantil{
     display: flex;
     height: 350px;
     height: 650px;
 }
+
+.container-titulo{
+    display: flex;
+    height: 350px;
+    height: 650px;
+}
+
+.container-diploma{
+    display: flex;
+    height: 350px;
+    height: 650px;
+}
+
+.container-grupal{
+    display: flex;
+    height: 25px;
+    height: 25px;
+}
+
+
 
 .container-text{
     position: absolute;
@@ -122,15 +148,49 @@
 
     }
 
+    .container-credencial{
+        display: relative;
+        width: 250px;
+        height: 250px;
+        margin-right: 250px;
+        height: 350px;
+        margin-right: -950px;
+        margin-left: -55px;
+    }
+    
     .container-infantil{
         display: relative;
-        width: 350px;
+        width: 150px;
         height: 350px;
         margin-right: -950px;
         margin-left: -55px;
         margin-top: 65px;
     }
-    
+
+    .container-titulo{
+        display: relative;
+        width: 150px;
+        height: 350px;
+        margin-right: -950px;
+        margin-left: -55px;
+        margin-top: 65px;
+    }
+
+    .container-diploma{
+        display: relative;
+        width: 150px;
+        height: 350px;
+        margin-right: -950px;
+        margin-left: -55px;
+        margin-top: 65px;
+    }
+
+    .container-grupal{
+        display: flex;
+        margin-right: -950px;
+        margin-left: -55px;
+        margin-top: 65px;
+    }
 }
 
 
@@ -195,6 +255,15 @@
         margin-top: 65px;
     }
   
+    .container-credencial{
+        display: relative;
+        margin-right: -950px;
+        margin-left: -55px;
+        margin-top: 65px;
+    }
+
+    
+
     .container-text{
         position: flex;
         margin-left: 50px;
